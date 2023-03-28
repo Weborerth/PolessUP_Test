@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Тест-задание</title>
+</head>
+<body>
+
+  <div class="wrapper">
+   <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    <img src="./assets/Header/logo.svg" alt="logo">
+                </a>
+                  <nav class="nav">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+                      <ul class="menu__box">
+                        <li><a class="menu__item" href="#about">About</a></li>
+                        <li><a class="menu__item" href="#services">Services</a></li>
+                        <li><a class="menu__item" href="#works">Works</a></li>
+                        <li><a class="menu__item" href="#blog">Blog</a></li>
+                      </ul>
+                    </div>
+                    <ul class="nav__ul">
+                      <li class="nav__item active"> <a href="#about">About</a> </li>
+                      <li class="nav__item"> <a href="#services">Services</a> </li>
+                      <li class="nav__item"> <a href="#works">Works</a> </li>
+                      <li class="nav__item"> <a href="#blog">Blog</a> </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+    <a name="about"></a>
+    <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <div class="intro__suptitle">Hello,</div>
+            <div class="intro__title">Dmitry Streblyanskiy</div>
+            <div class="intro__subtitle">a PolessUP Front-end  Developer</div>
+            <button class="btn" id="modal-btn">Let’s Talk</button>
+          </div>
+          <div class="intro__img">
+            <img src="./assets/Header/photo.png" alt="intro">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a name="services"></a>
+  <section class="services">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__suptitle">Services</div>
+        <h2 class="section__title">What actually I love to do</h2>
+      </div>
+      <div class="services__content">
+        <div class="service__block">
+          <div class="block__header">
+            <div class="block__logo">
+              <img src="./assets/Services/Services_1.svg" alt="Phone">
+            </div>
+            <div class="block__title">UX Research</div>
+          </div>
+          <div class="block_subtitle">
+            New demos are continually added and buying a single license for Mak gives you access to all of
+what's shown below, plus everything that will be added in the future.
+          </div>
+        </div>
+        <div class="service__block">
+          <div class="block__header">
+            <div class="block__logo">
+              <img src="./assets/Services/Services_2.svg" alt="Wireline">
+            </div>
+            <div class="block__title">Brand Design</div>
+          </div>
+          <div class="block_subtitle">
+            New demos are continually added and buying a single license for Mak gives you access to all of
+what's shown below, plus everything that will be added in the future.
+          </div>
+        </div>
+        <div class="service__block">
+          <div class="block__header">
+            <div class="block__logo">
+              <img src="./assets/Services/Services_3.svg" alt="Page">
+            </div>
+            <div class="block__title">Web Development</div>
+          </div>
+          <div class="block_subtitle">
+            New demos are continually added and buying a single license for Mak gives you access to all of
+what's shown below, plus everything that will be added in the future.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a name="works"></a>
+  <section class="portfolio">
+    <div class="bg"></div>
+    <div class="container">
+      <div class="portfolio__header">
+        <div class="section__header">
+          <div class="section__suptitle">Portfolio</div>
+          <h2 class="section__title">All Creative Projects</h2>
+        </div>
+        <a href="#" class="explore">
+          <span>Explore More</span>
+          <img src="./assets/Portfolio/Vector.svg">
+        </a>
+      </div>
+      <div class="portfolio__content">
+        <img src="./assets/Portfolio/portfolio.png" alt="Portfolio_1">
+        <img src="./assets/Portfolio/portfolio2.png" alt="Portfolio_2">
+      </div>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__suptitle">Clients</div>
+        <h2 class="section__title">Big Deal With</h2>
+      </div>
+      <div class="clients__content">
+        <div class="clients__block">
+          <div class="block__contents">
+            <img src="./assets/Clients/HTML5.png" alt="f">
+            <div class="block__title">HTML</div>
+          </div>
+        </div>
+        <div class="clients__block">
+          <div class="block__contents">
+            <img src="./assets/Clients/CSS.png" alt="f">
+            <div class="block__title">CSS</div>
+          </div>
+        </div>
+        <div class="clients__block">
+          <div class="block__contents">
+            <img src="./assets/Clients/JS.png" alt="f">
+            <div class="block__title">JS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="Testimonials">
+  <div class="testimonials__bg"></div>
+    <div class="container">
+      <div class="section__header">
+        <div class="section__suptitle">Testimonials</div>
+        <h2 class="section__title">What People Says</h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonials__content">
+              <div class="slider__bg">
+                <img src="./assets/Testimonials/bg1.png" alt="background image">
+                <img src="./assets/Testimonials/bg4.png" alt="background image">
+                <img src="./assets/Testimonials/bg3.png" alt="background image">
+                <img src="./assets/Testimonials/bg2.png" alt="background image">
+              </div>
+              <div class="slider__content">
+                <div class="slider__item">
+                  <div class="item__quotes">
+                    <img src="./assets/Testimonials/quote.svg" alt="quote">
+                  </div>
+                  <div class="item__text">
+                    Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
+                  </div>
+                  <div class="item__photo">
+                    <img src="./assets/Testimonials/main.png" alt="testimonial 1">
+                  </div>
+                  <div class="item__name">
+                    Michal John
+                  </div>
+                  <div class="item__post">
+                    CEO of MZP
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__content">
+              <div class="slider__bg">
+                <img src="./assets/Testimonials/bg1.png" alt="background image">
+                <img src="./assets/Testimonials/bg4.png" alt="background image">
+                <img src="./assets/Testimonials/bg3.png" alt="background image">
+                <img src="./assets/Testimonials/bg2.png" alt="background image">
+              </div>
+              <div class="slider__content">
+                <div class="slider__item">
+                  <div class="item__quotes">
+                    <img src="./assets/Testimonials/quote.svg" alt="quote">
+                  </div>
+                  <div class="item__text">
+                    Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
+                  </div>
+                  <div class="item__photo">
+                    <img src="./assets/Testimonials/main.png" alt="testimonial 1">
+                  </div>
+                  <div class="item__name">
+                    Michal John
+                  </div>
+                  <div class="item__post">
+                    CEO of MZP
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__content">
+              <div class="slider__bg">
+                <img src="./assets/Testimonials/bg1.png" alt="background image">
+                <img src="./assets/Testimonials/bg4.png" alt="background image">
+                <img src="./assets/Testimonials/bg3.png" alt="background image">
+                <img src="./assets/Testimonials/bg2.png" alt="background image">
+              </div>
+              <div class="slider__content">
+                <div class="slider__item">
+                  <div class="item__quotes">
+                    <img src="./assets/Testimonials/quote.svg" alt="quote">
+                  </div>
+                  <div class="item__text">
+                    Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
+                  </div>
+                  <div class="item__photo">
+                    <img src="./assets/Testimonials/main.png" alt="testimonial 1">
+                  </div>
+                  <div class="item__name">
+                    Michal John
+                  </div>
+                  <div class="item__post">
+                    CEO of MZP
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__content">
+              <div class="slider__bg">
+                <img src="./assets/Testimonials/bg1.png" alt="background image">
+                <img src="./assets/Testimonials/bg4.png" alt="background image">
+                <img src="./assets/Testimonials/bg3.png" alt="background image">
+                <img src="./assets/Testimonials/bg2.png" alt="background image">
+              </div>
+              <div class="slider__content">
+                <div class="slider__item">
+                  <div class="item__quotes">
+                    <img src="./assets/Testimonials/quote.svg" alt="quote">
+                  </div>
+                  <div class="item__text">
+                    Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
+                  </div>
+                  <div class="item__photo">
+                    <img src="./assets/Testimonials/main.png" alt="testimonial 1">
+                  </div>
+                  <div class="item__name">
+                    Michal John
+                  </div>
+                  <div class="item__post">
+                    CEO of MZP
+                  </div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__content">
+              <div class="slider__bg">
+                <img src="./assets/Testimonials/bg1.png" alt="background image">
+                <img src="./assets/Testimonials/bg4.png" alt="background image">
+                <img src="./assets/Testimonials/bg3.png" alt="background image">
+                <img src="./assets/Testimonials/bg2.png" alt="background image">
+              </div>
+              <div class="slider__content">
+                <div class="slider__item">
+                  <div class="item__quotes">
+                    <img src="./assets/Testimonials/quote.svg" alt="quote">
+                  </div>
+                  <div class="item__text">
+                    Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
+                  </div>
+                  <div class="item__photo">
+                    <img src="./assets/Testimonials/main.png" alt="testimonial 1">
+                  </div>
+                  <div class="item__name">
+                    Michal John
+                  </div>
+                  <div class="item__post">
+                    CEO of MZP
+                  </div>
+                  </div>
+                </div>
+            </div>  
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonials__content">
+              <div class="slider__bg">
+                <img src="./assets/Testimonials/bg1.png" alt="background image">
+                <img src="./assets/Testimonials/bg4.png" alt="background image">
+                <img src="./assets/Testimonials/bg3.png" alt="background image">
+                <img src="./assets/Testimonials/bg2.png" alt="background image">
+              </div>
+              <div class="slider__content">
+                <div class="slider__item">
+                  <div class="item__quotes">
+                    <img src="./assets/Testimonials/quote.svg" alt="quote">
+                  </div>
+                  <div class="item__text">
+                    Quote testimonials demonstrate support for your product or feature from a user who has experience with it. This can be significantly more effective than traditional advertising methods as most consumers will trust.
+                  </div>
+                  <div class="item__photo">
+                    <img src="./assets/Testimonials/main.png" alt="testimonial 1">
+                  </div>
+                  <div class="item__name">
+                    Michal John
+                  </div>
+                  <div class="item__post">
+                    CEO of MZP
+                  </div>
+                  </div>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <a name="blog"></a>
+  <section class="blog">
+    <div class="container">
+      <div class="blog__inner">
+        <div class="section__header">
+          <div class="section__suptitle">Blog</div>
+          <h2 class="section__title">Get News Feeds</h2>
+        </div>
+        <div class="blog__content">
+          <div class="blog__post blog__post__big">
+            <div class="post__img">
+              <img src="./assets/Blog/Blog.svg" alt="Technology is evolving rapidly. New devices and applications.">
+            </div>
+            <div class="post__content">
+              <div class="blog__date">
+                20 June/2020
+              </div>
+              <div class="blog__title">
+                <a href="#" class="title_text">Technology is evolving rapidly. New devices and applications.</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog__post">
+            <div class="post__img">
+              <img src="./assets/Blog/Blog_2.svg" alt="Technology is evolving rapidly. New devices and applications.">
+            </div>
+            <div class="post__bg"></div>
+            <div class="post__content">
+              <div class="blog__date">
+                20 June/2020
+              </div>
+              <div class="blog__title">
+                <a href="#" class="title_text">New devices and applications come to the market.</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="blog__post">
+            <div class="post__img">
+              <img src="./assets/Blog/Blog_3.svg" alt="Technology is evolving rapidly. New devices and applications.">
+            </div>
+            <div class="post__bg"></div>
+            <div class="post__content">
+              <div class="blog__date">
+                20 June/2020
+              </div>
+              <div class="blog__title">
+                <a href="#" class="title_text">Every day providing solutions to problems.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact__bg"></div>
+    <div class="container">
+      <div class="section__header">
+        <div class="section__suptitle">Contact Me</div>
+          <div class="contact__header">
+            <h2 class="section__title section__title__bigger">Let me know if you want to talk about a potential collaboration. I'm available for freelance work.</h2>
+            <a href="#" class="email">infoname@mail.com</a>
+          </div>
+      </div>
+      <form action="#" class="contact__form">
+        <input type="text" class="contact__input" placeholder="What’s your name?">
+        <input type="email" class="contact__input" placeholder="Your email">
+        <input type="text" class="contact__input" placeholder="Tell me about your project">
+        <div class="form__btn">
+          <button class="btn" type="submit">Get a Quote</button>
+          <div class="form-controls">
+            <button><img src="./assets/Contact/GG.svg" alt="GG"></button>    
+            <button><img src="./assets/Contact/Arrow.svg" alt="Arrow"></button>      
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="contact__media">
+      <div class="media-title">
+        Let’s be Friends
+      </div>
+      <div class="media__items">
+        <a href="https://github.com/Weborerth" class="media__item"><img src="./assets/Contact/Wrb.svg" alt="Web"></a>
+        <a href="https://www.instagram.com/weborerth/" class="media__item"><img src="./assets/Contact/Inst.svg" alt="Inst"></a>
+        <a href="https://t.me/Weborerth" class="media__item"><img src="./assets/Contact/In.svg" alt="In"></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal__items">
+        <a href="https://github.com/Weborerth" class="modal__item" target="_blank"><img src="./assets/Modal/GitHub.svg" alt="GIT"></a>
+        <a href="https://www.instagram.com/weborerth/" class="modal__item" target="_blank"><img src="./assets/Modal/Instagram.svg" alt="Inst"></a>
+        <a href="https://t.me/Weborerth" class="modal__item" target="_blank"><img src="./assets/Modal/Telegram.svg" alt="TG"></a>
+      </div>
+      <button id="close-modal">Закрыть</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
